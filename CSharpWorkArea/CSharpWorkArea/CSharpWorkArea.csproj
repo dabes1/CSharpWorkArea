@@ -55,7 +55,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassObjects\AbstractClass.cs" />
+    <Compile Include="ClassObjects\BaseClass.cs" />
     <Compile Include="ClassObjects\CSharpObjects.cs" />
+    <Compile Include="ClassObjects\IWrapper.cs" />
+    <Compile Include="ClassObjects\PartialClass1.cs" />
+    <Compile Include="ClassObjects\PartialClass2.cs" />
+    <Compile Include="ClassObjects\SealedClass.cs" />
+    <Compile Include="ClassObjects\Wrap1.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>

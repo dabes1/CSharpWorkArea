@@ -30,7 +30,8 @@ namespace CSharpWorkArea
         {
             CSharpWorkArea.ClassObjects.CSharpObjects HashTblClass = new ClassObjects.CSharpObjects();
 
-
+            HashSet<int> set1 = HashTblClass.HashSet_Int;
+            HashSet<int> set2 = HashTblClass.HashSet_Int2;
         }
     }
 }

@@ -22,17 +22,6 @@ namespace CSharpWorkArea.ClassObjects
         public CSharpObjects()
         {
 
-            _hashSet_Int = new HashSet<int>();
-            for (int i = 1; i < 25; i++)            
-                _hashSet_Int.Add(i * 5);
-            
-            _hashSet_Int2 = new HashSet<int>();
-            for (int i = 0; i < 25; i++)
-                _hashSet_Int2.Add(i * 3);
-
-            _hashSet_Int2.UnionWith(_hashSet_Int);
-
-
         }
 
         // properties:
@@ -40,7 +29,9 @@ namespace CSharpWorkArea.ClassObjects
         {
             get
             {
-                return _hashSet_Int;
+                if (_hashSet_Int != null)
+                    return _hashSet_Int;
+                return null;
             }
             set
             {
@@ -48,11 +39,28 @@ namespace CSharpWorkArea.ClassObjects
             }
         }
 
+        public HashSet<int> HashSet_Int2
+        {
+            get
+            {
+                if (_hashSet_Int2 != null)
+                    return _hashSet_Int2;
+                return null;
+            }
+            set
+            {
+                _hashSet_Int2 = value;
+            }
+        }
+
+
         public HashSet<string> HashSet_String
         {
             get
             {
-                return _hashSet_String;
+                if (_hashSet_String != null)
+                    return _hashSet_String;
+                return null;
             }
             set
             {
@@ -61,6 +69,20 @@ namespace CSharpWorkArea.ClassObjects
         }
 
 
+        public void BuildHashSetInt()
+        {
+            _hashSet_Int = new HashSet<int>();
+            for (int i = 1; i < 25; i++)            
+                _hashSet_Int.Add(i * 5);            
+            _hashSet_Int2.UnionWith(_hashSet_Int);
+        }
+
+        public void BuildHashSetInt2()
+        {
+            _hashSet_Int2 = new HashSet<int>();
+            for (int i = 0; i < 25; i++)
+                _hashSet_Int2.Add(i * 3);
+        }
 
     }
 }
