@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="ClassObjects\AbstractClass.cs" />
     <Compile Include="ClassObjects\BaseClass.cs" />
+    <Compile Include="ClassObjects\Class1FromBaseClass.cs" />
     <Compile Include="ClassObjects\CSharpObjects.cs" />
     <Compile Include="ClassObjects\IWrapper.cs" />
     <Compile Include="ClassObjects\PartialClass1.cs" />

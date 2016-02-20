@@ -13,5 +13,6 @@ namespace CSharpWorkArea.ClassObjects
 
         void GetValue1();
         void GetValue2();
+        int ReturnInValue(int inValue);
     }
 }
