@@ -9,10 +9,11 @@ namespace CSharpWorkArea.ClassObjects
     public abstract class AbstractClass
     {
         int _abstractValue1 = 0;
+        int _abstractValue2 = 0;
 
         AbstractClass()
         {
-            _abstractValue1 = 0;
+            _abstractValue1 = _abstractValue2 = 0;
         }
 
         AbstractClass(int inVal1)
