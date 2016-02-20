@@ -12,26 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CSharpWorkArea
+namespace CSharpWorkArea.Windows
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-
-            LoadContents();
-        }
-
-        public void LoadContents()
-        {
-            CSharpWorkArea.ClassObjects.CSharpObjects HashTblClass = new ClassObjects.CSharpObjects();
-
-            HashSet<int> set1 = HashTblClass.HashSet_Int;
-            HashSet<int> set2 = HashTblClass.HashSet_Int2;
         }
     }
 }

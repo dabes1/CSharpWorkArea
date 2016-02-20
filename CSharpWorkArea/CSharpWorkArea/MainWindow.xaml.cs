@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+// Added usings
+using CSharpWorkArea.Windows;
+
 
 namespace CSharpWorkArea
 {
@@ -20,15 +23,32 @@ namespace CSharpWorkArea
     /// </summary>
     public partial class MainWindow : Window
     {
+            string _content = "test";
         public MainWindow()
         {
+            InitializeContents();
+
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void InitializeContents()
+        {
+            // The following is causing a null refernce error!!   I HAVE NO IDEA WHY???
+            //Btn1.Content = "BTN1";
+            //Label1.Content = _content; // "This demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
+            //Label2.Content = _content; // "This demonstrates the use of various C# classes (abstract, partial, sealed, static, interface, )";
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
             Window1 wd1 = new Window1();
             wd1.Show();
+        }
+
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 wd2 = new Window2();
+            wd2.Show();
         }
     }
 }
