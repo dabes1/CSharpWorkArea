@@ -1,0 +1,30 @@
+﻿<Window x:Class="CSharpWorkArea.Windows.PayPalWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpWorkArea.Windows"
+        mc:Ignorable="d"
+        Title="PayPalWindow" SizeToContent="WidthAndHeight">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+
+
+        <Label Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Grid.RowSpan="2" Name="LblDesc" ></Label>
+
+        <Button Name="Btn1" Grid.Column="1" Grid.Row="1" Height="25" Width="100" Click="Btn1_Click"></Button>
+        <Label Name="Lbl1" Grid.Column="2" Grid.Row="1" Height="25"></Label>
+        
+        
+    </Grid>
+</Window>

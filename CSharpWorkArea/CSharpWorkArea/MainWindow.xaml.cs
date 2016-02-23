@@ -23,20 +23,19 @@ namespace CSharpWorkArea
     /// </summary>
     public partial class MainWindow : Window
     {
-            string _content = "test";
         public MainWindow()
         {
-            InitializeContents();
-
             InitializeComponent();
+            InitializeContents();
         }
 
         public void InitializeContents()
         {
             // The following is causing a null refernce error!!   I HAVE NO IDEA WHY???
             //Btn1.Content = "BTN1";
-            //Label1.Content = _content; // "This demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
-            //Label2.Content = _content; // "This demonstrates the use of various C# classes (abstract, partial, sealed, static, interface, )";
+            Label1.Content = "This demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
+            Label2.Content = "This demonstrates the use of various C# classes (abstract, partial, sealed, static, interface, )";
+            Label3.Content = "Launch PayPal Functionalities Window";
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -49,6 +48,12 @@ namespace CSharpWorkArea
         {
             Window2 wd2 = new Window2();
             wd2.Show();
+        }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            PayPalWindow wd = new PayPalWindow();
+            wd.Show();
         }
     }
 }
