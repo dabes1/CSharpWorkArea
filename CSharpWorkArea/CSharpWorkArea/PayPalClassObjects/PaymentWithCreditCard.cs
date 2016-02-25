@@ -18,6 +18,9 @@ namespace CSharpWorkArea.PayPalClassObjects
         {
         }
 
-
+        public APIContext GetCurrentApiContext()
+        {
+            return base.GetApiContext();
+        }
     }
 }
