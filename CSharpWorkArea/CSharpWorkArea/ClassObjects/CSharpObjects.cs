@@ -24,6 +24,10 @@ namespace CSharpWorkArea.ClassObjects
 
         }
 
+
+
+
+
         // properties:
         public HashSet<int> HashSet_Int
         {
@@ -68,13 +72,11 @@ namespace CSharpWorkArea.ClassObjects
             }
         }
 
-
         public void BuildHashSetInt()
         {
             _hashSet_Int = new HashSet<int>();
             for (int i = 1; i < 25; i++)            
                 _hashSet_Int.Add(i * 5);            
-            _hashSet_Int2.UnionWith(_hashSet_Int);
         }
 
         public void BuildHashSetInt2()
@@ -84,5 +86,10 @@ namespace CSharpWorkArea.ClassObjects
                 _hashSet_Int2.Add(i * 3);
         }
 
+        public void UnionIntHashSets()
+        {
+            if (_hashSet_Int != null && _hashSet_Int2 != null)
+            _hashSet_Int2.UnionWith(_hashSet_Int);
+        }
     }
 }

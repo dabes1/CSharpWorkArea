@@ -81,6 +81,9 @@
     <Compile Include="Windows\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Window1HashSet.xaml.cs">
+      <DependentUpon>Window1HashSet.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
@@ -103,6 +106,10 @@
     <Page Include="Windows\Window1.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Windows\Window1HashSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Window2.xaml">
       <SubType>Designer</SubType>

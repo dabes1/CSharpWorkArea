@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+// added using
+using CSharpWorkArea.ClassObjects;
+using CSharpWorkArea.Windows;
 
 namespace CSharpWorkArea
 {
@@ -28,14 +31,24 @@ namespace CSharpWorkArea
 
         public void LoadContents()
         {
-            TxtBlk_Desc.Text = "This window demonstrates usage of a HashSet.";
 
+            Btn1.Content = "Launch";
+            Lbl1.Content = "HashSet Demonstration";
 
+            Btn2.Content = "Launch";
+            Lbl2.Content = "List Demonstration";
 
-            CSharpWorkArea.ClassObjects.CSharpObjects HashTblClass = new ClassObjects.CSharpObjects();
+            Btn3.Content = "Launch";
+            Lbl3.Content = "Dictionary Demonstration";
 
-            HashSet<int> set1 = HashTblClass.HashSet_Int;
-            HashSet<int> set2 = HashTblClass.HashSet_Int2;
+            TxtBlk_Desc.Text = "This window demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
+
+        }
+
+        public void LaunchHashSet(object e, RoutedEventArgs arg)
+        {
+            Window1HashSet wd = new Window1HashSet();
+            wd.Show();
         }
     }
 }
