@@ -39,6 +39,8 @@ namespace CSharpWorkArea.Windows
             HashSet<int> set1 = HashTblClass.HashSet_Int;
             HashSet<int> set2 = HashTblClass.HashSet_Int2;
 
+            int i = 10;
+
         }
     }
 }
