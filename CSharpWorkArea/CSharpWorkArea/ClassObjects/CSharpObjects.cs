@@ -11,13 +11,6 @@ namespace CSharpWorkArea.ClassObjects
         private List<int> _list_Int;        
         private List<string> _list_Str;
 
-        private HashSet<int> _hashSet_Int;
-        private HashSet<int> _hashSet_Int2;
-        private HashSet<string> _hashSet_String;
-
-        private Dictionary<int, string> _dict_IntStr;
-        private Dictionary<string, string> _dict_StrStr;
-
         // constructor
         public CSharpObjects()
         {
@@ -25,8 +18,18 @@ namespace CSharpWorkArea.ClassObjects
         }
 
 
+    }
 
+    public class HashSetClass
+    {
+        private HashSet<int> _hashSet_Int;
+        private HashSet<int> _hashSet_Int2;
+        private HashSet<string> _hashSet_String;
 
+        // constructors
+        public HashSetClass()
+        {
+        }
 
         // properties:
         public HashSet<int> HashSet_Int
@@ -72,11 +75,13 @@ namespace CSharpWorkArea.ClassObjects
             }
         }
 
+
+        // public methods
         public void BuildHashSetInt()
         {
             _hashSet_Int = new HashSet<int>();
-            for (int i = 1; i < 25; i++)            
-                _hashSet_Int.Add(i * 5);            
+            for (int i = 1; i < 25; i++)
+                _hashSet_Int.Add(i * 5);
         }
 
         public void BuildHashSetInt2()
@@ -86,10 +91,58 @@ namespace CSharpWorkArea.ClassObjects
                 _hashSet_Int2.Add(i * 3);
         }
 
-        public void UnionIntHashSets()
+        public HashSet<int> UnionIntHashSets(HashSet<int> inSet1, HashSet<int> inSet2)
         {
-            if (_hashSet_Int != null && _hashSet_Int2 != null)
-            _hashSet_Int2.UnionWith(_hashSet_Int);
+            HashSet<int> _set1 = new HashSet<int>();
+            _set1 = inSet1;
+            HashSet<int> _set2 = new HashSet<int>();
+            _set2 = inSet2;
+
+            _set1.UnionWith(_set2);
+            return _set1;
         }
+
+    }
+
+    public class DictionaryClass
+    {
+        private Dictionary<int, string> _dict_IntStr;
+        private Dictionary<string, string> _dict_StrStr;
+
+
+        // constructor
+        public DictionaryClass()
+        {
+        }
+
+        // properties
+        public Dictionary<int, string> Get_IntStr
+        {
+            get
+            {
+                if (_dict_IntStr != null)
+                    return _dict_IntStr;
+                return null;
+            }
+            set { _dict_IntStr = value; }
+        }
+            
+        public Dictionary<string, string> Get_StrStr
+        {
+            get
+            {
+                if (_dict_StrStr != null)
+                    return _dict_StrStr;
+                return null;
+            }
+            set
+            {
+                _dict_StrStr = value;
+            }
+        }
+            
+            
+
+
     }
 }

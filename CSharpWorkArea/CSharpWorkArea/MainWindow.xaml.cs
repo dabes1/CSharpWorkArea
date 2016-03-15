@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 // Added usings
 using CSharpWorkArea.Windows;
+//using CSharpWorkArea.Windows.Window1s;
 
 
 namespace CSharpWorkArea

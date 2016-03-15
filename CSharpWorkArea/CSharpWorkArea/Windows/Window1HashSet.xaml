@@ -5,8 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpWorkArea.Windows"
         mc:Ignorable="d"
-        Title="Window1HashSet" Height="300" Width="300">
+        Title="Window1HashSet" SizeToContent="WidthAndHeight" >
     <Grid>
-        
+
+        <Label Name="lblHashSet1" Height="25" VerticalAlignment="Top"/>
+        <Label Name="lblHashData1" Height="25" VerticalAlignment="Top" Margin="0,25,0,0"></Label>
+
+        <Label Name="lblHashSet2" Height="25" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <Label Name="lblHashData2" Height="25" VerticalAlignment="Top" Margin="0,75,0,0"></Label>
+
+        <Label Name="lblUnionSet1_2" Height="25" VerticalAlignment="Top" Margin="0,100,0,0"/>
+        <Label Name="lblUnionSet1_2Data" Height="25" VerticalAlignment="Top" Margin="0,125,0,0"></Label>
+
+
+
+        <Label Name="lblHashSet3" Height="25" VerticalAlignment="Top" Margin="0,150,0,0"/>
+        <Label Name="lblHashData3" Height="25" VerticalAlignment="Top" Margin="0,175,0,0"></Label>
+
+        <Label Name="lblHashSet4" Height="25" VerticalAlignment="Top" Margin="0,200,0,0"/>
+        <Label Name="lblHashData4" Height="25" VerticalAlignment="Top" Margin="0,225,0,0"></Label>
+
+
+
+        <!--<Label Name="lblUnionSet2_1" Height="25" VerticalAlignment="Top" Margin="0,150,0,0"/>
+        <Label Name="lblUnionSet2_1Data" Height="25" VerticalAlignment="Top" Margin="0,175,0,0"></Label>-->
+
     </Grid>
 </Window>
