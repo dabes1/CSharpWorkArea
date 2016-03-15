@@ -13,8 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 // Added usings
 
-
-namespace CSharpWorkArea.Windows
+namespace CSharpWorkArea.Windows.WindowPayPals
 {
     /// <summary>
     /// Interaction logic for PayPalWindow.xaml
@@ -42,7 +41,5 @@ namespace CSharpWorkArea.Windows
 
 
         }
-
-
     }
 }

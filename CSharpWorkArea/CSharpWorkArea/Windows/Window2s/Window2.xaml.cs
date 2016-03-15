@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CSharpWorkArea.Windows
+namespace CSharpWorkArea.Windows.Window2s
 {
     /// <summary>
     /// Interaction logic for Window2.xaml
@@ -22,6 +22,8 @@ namespace CSharpWorkArea.Windows
         public Window2()
         {
             InitializeComponent();
+
+            lblDesc.Content = "New Window 2";
         }
     }
 }

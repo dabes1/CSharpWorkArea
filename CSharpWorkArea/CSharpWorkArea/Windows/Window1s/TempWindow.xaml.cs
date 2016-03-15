@@ -15,14 +15,14 @@ using System.Windows.Shapes;
 using CSharpWorkArea.ClassObjects;
 using CSharpWorkArea.Windows;
 
-namespace CSharpWorkArea
+namespace CSharpWorkArea.Windows.Window1s
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for TempWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class TempWindow : Window
     {
-        public Window1()
+        public TempWindow()
         {
             InitializeComponent();
 

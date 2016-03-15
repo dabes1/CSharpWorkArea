@@ -13,9 +13,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 // added using
 using CSharpWorkArea.ClassObjects;
-using CSharpWorkArea.Windows;
+using CSharpWorkArea.Windows.Window1s;
 
-namespace CSharpWorkArea
+namespace CSharpWorkArea.Windows.Window1s
 {
     /// <summary>
     /// Interaction logic for Window1.xaml
@@ -50,5 +50,6 @@ namespace CSharpWorkArea
             Window1HashSet wd = new Window1HashSet();
             wd.Show();
         }
+
     }
 }

@@ -1,11 +1,11 @@
-﻿<Window x:Class="CSharpWorkArea.Windows.Window1HashSet"
+﻿<Window x:Class="CSharpWorkArea.Windows.Window1s.Window1HashSet"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CSharpWorkArea.Windows"
+        xmlns:local="clr-namespace:CSharpWorkArea.Windows.Window1s"
         mc:Ignorable="d"
-        Title="Window1HashSet" SizeToContent="WidthAndHeight" >
+        Title="Window1HashSet" SizeToContent="WidthAndHeight">
     <Grid>
 
         <Label Name="lblHashSet1" Height="25" VerticalAlignment="Top"/>

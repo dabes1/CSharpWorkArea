@@ -13,8 +13,10 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 // Added usings
-using CSharpWorkArea.Windows;
-//using CSharpWorkArea.Windows.Window1s;
+//using CSharpWorkArea.Windows;
+using CSharpWorkArea.Windows.Window1s;
+using CSharpWorkArea.Windows.Window2s;
+using CSharpWorkArea.Windows.WindowPayPals;
 
 
 namespace CSharpWorkArea
@@ -41,6 +43,7 @@ namespace CSharpWorkArea
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
+            //TempWindow wd1 = new TempWindow();
             Window1 wd1 = new Window1();
             wd1.Show();
         }
