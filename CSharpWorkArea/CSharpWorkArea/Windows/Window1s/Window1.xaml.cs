@@ -51,5 +51,17 @@ namespace CSharpWorkArea.Windows.Window1s
             wd.Show();
         }
 
+        public void LaunchList(object e, RoutedEventArgs arg)
+        {
+            Window1List wd = new Window1List();
+            wd.Show();
+        }
+
+        public void LaunchDictionary(object e, RoutedEventArgs arg)
+        {
+            Window1Dictionary wd = new Window1Dictionary();
+            wd.Show();
+        }
+
     }
 }
