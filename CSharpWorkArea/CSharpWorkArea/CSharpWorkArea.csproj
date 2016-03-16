@@ -96,6 +96,9 @@
     <Compile Include="Windows\WindowPayPals\PayPalWindow.xaml.cs">
       <DependentUpon>PayPalWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\Windows_Errors\WindowErrorMsg.xaml.cs">
+      <DependentUpon>WindowErrorMsg.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -133,6 +136,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\WindowPayPals\PayPalWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Windows_Errors\WindowErrorMsg.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

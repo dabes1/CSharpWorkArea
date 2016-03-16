@@ -15,6 +15,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="25px"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="25px"/>
         </Grid.RowDefinitions>
 
 
