@@ -34,10 +34,9 @@ namespace CSharpWorkArea.Windows.Window1s
         public void LoadDictionary()
         {
 
-            lblAddContent.Content = "This window demonstrates the use of a Dictionary object" + '\n' + '\n';
+            lblAddContent.Content = "This window demonstrates the use of a Dictionary object \"openWith\"" + '\n' + '\n';
 
-            // Add some elements to the dictionary. There are no 
-            // duplicate keys, but some of the values are duplicates.
+            // Add some elements to the dictionary. There are no duplicate keys, but some of the values are duplicates.
             openWith.Add("txt", "notepad.exe");
             openWith.Add("bmp", "paint.exe");
             openWith.Add("dib", "paint.exe");
@@ -49,8 +48,7 @@ namespace CSharpWorkArea.Windows.Window1s
 
             lblAddContent.Content += "\n" + "\n";
 
-            // The Add method throws an exception if the new key is 
-            // already in the dictionary.
+            // The Add method throws an exception if the new key is already in the dictionary.
             lblAddContent.Content += "Try to Add an element \"txt\" already in the dictionary.\n";
             try
             {
