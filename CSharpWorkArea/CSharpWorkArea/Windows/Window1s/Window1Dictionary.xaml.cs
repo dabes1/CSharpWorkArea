@@ -179,59 +179,7 @@ namespace CSharpWorkArea.Windows.Window1s
             }
             lblAddContent.Content += "\n";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            grd1.Children.Add(lblAddContent);
-
-
-            //Label lblAdd = new Label();
-            //lblAdd.Content = "tester label" + '\n';
-
-            //lblAdd.Content += "tester label 2";
-            //grd1.Children.Add(lblAdd);
-
-
+            gridDictionary.Children.Add(lblAddContent);
         }
 
         public void AddCurrentItem()

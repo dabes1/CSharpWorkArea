@@ -41,6 +41,9 @@ namespace CSharpWorkArea.Windows.Window1s
             Btn3.Content = "Launch";
             Lbl3.Content = "Dictionary Demonstration";
 
+            Btn4.Content = "Launch";
+            Lbl4.Content = "HashTable Demonstration";
+
             TxtBlk_Desc.Text = "This window demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
 
         }
@@ -63,5 +66,10 @@ namespace CSharpWorkArea.Windows.Window1s
             wd.Show();
         }
 
+        public void LaunchHashTable(object e, RoutedEventArgs arg)
+        {
+            Window1HashTable wd = new Window1HashTable();
+            wd.Show();
+        }
     }
 }

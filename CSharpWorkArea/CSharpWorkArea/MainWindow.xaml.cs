@@ -43,7 +43,6 @@ namespace CSharpWorkArea
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            //TempWindow wd1 = new TempWindow();
             Window1 wd1 = new Window1();
             wd1.Show();
         }

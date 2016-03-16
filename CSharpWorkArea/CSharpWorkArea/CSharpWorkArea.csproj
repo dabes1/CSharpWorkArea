@@ -75,9 +75,6 @@
     <Compile Include="PayPalClassObjects\PaymentWithCreditCard.cs" />
     <Compile Include="PayPalClassObjects\PayPalBase.cs" />
     <Compile Include="Utilities\Configuration.cs" />
-    <Compile Include="Windows\Window1s\TempWindow.xaml.cs">
-      <DependentUpon>TempWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\Window1s\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
@@ -86,6 +83,9 @@
     </Compile>
     <Compile Include="Windows\Window1s\Window1HashSet.xaml.cs">
       <DependentUpon>Window1HashSet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Window1s\Window1HashTable.xaml.cs">
+      <DependentUpon>Window1HashTable.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Window1s\Window1List.xaml.cs">
       <DependentUpon>Window1List.xaml</DependentUpon>
@@ -111,10 +111,6 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Windows\Window1s\TempWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\Window1s\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -124,6 +120,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Window1s\Window1HashSet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\Window1s\Window1HashTable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
