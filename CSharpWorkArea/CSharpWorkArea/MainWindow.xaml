@@ -28,5 +28,11 @@
         <Button Content="Window 3" Height="25" Width="100" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="0,50,0,0" Click="Button3_Click" ></Button>
         <Label Name="Label3" Height="25" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Margin="0,50,0,0" ></Label>
 
+        <Button Content="Window 4" Height="25" Width="100" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="0,75,0,0" Click="Button4_Click" ></Button>
+        <Label Name="Label4" Height="25" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Margin="0,75,0,0" ></Label>
+
+        <Button Content="Window 5" Height="25" Width="100" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="0,100,0,0" Click="Button5_Click" ></Button>
+        <Label Name="Label5" Height="25" Grid.Column="2" Grid.Row="1" VerticalAlignment="Top" Margin="0,100,0,0" ></Label>
+
     </Grid>
 </Window>

@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CSharpWorkArea.Windows.Window1s"
         mc:Ignorable="d"
-        Title="Window1List" Height="300" Width="300">
-    <Grid>
-        
-    </Grid>
+        Title="Window1List" SizeToContent="WidthAndHeight">
+    <ScrollViewer>
+        <Grid Name="gridList" >
+
+        </Grid>
+    </ScrollViewer>
 </Window>

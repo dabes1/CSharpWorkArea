@@ -67,6 +67,7 @@
     <Compile Include="ClassObjects\BaseClass.cs" />
     <Compile Include="ClassObjects\Class1FromBaseClass.cs" />
     <Compile Include="ClassObjects\CSharpObjects.cs" />
+    <Compile Include="ClassObjects\ListObjects.cs" />
     <Compile Include="ClassObjects\PartialClass1.cs" />
     <Compile Include="ClassObjects\PartialClass2.cs" />
     <Compile Include="ClassObjects\SealedClass.cs" />
@@ -92,6 +93,9 @@
     </Compile>
     <Compile Include="Windows\Window2s\Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Window3s\Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\WindowPayPals\PayPalWindow.xaml.cs">
       <DependentUpon>PayPalWindow.xaml</DependentUpon>
@@ -135,6 +139,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\Window3s\Window3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\WindowPayPals\PayPalWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -172,7 +180,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Windows\Window4s\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

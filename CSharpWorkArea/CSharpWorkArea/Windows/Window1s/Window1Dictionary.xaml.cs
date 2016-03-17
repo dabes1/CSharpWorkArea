@@ -33,6 +33,7 @@ namespace CSharpWorkArea.Windows.Window1s
 
         public void LoadDictionary()
         {
+            // Dictionary examples from the following link: https://msdn.microsoft.com/en-us/library/xfhwa508(v=vs.110).aspx
 
             lblAddContent.Content = "This window demonstrates the use of a Dictionary object \"openWith\"" + '\n' + '\n';
 

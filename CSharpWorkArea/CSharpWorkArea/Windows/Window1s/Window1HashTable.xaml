@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:CSharpWorkArea.Windows.Window1s"
         mc:Ignorable="d"
         Title="Window1HashTable" SizeToContent="WidthAndHeight">
-    <Grid Name="gridHashTable">
+    <ScrollViewer>
+        <Grid Name="gridHashTable">
         
-    </Grid>
+        </Grid>
+    </ScrollViewer>
 </Window>

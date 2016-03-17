@@ -38,7 +38,9 @@ namespace CSharpWorkArea
             //Btn1.Content = "BTN1";
             Label1.Content = "This demonstrates the use of various C# Collections (HashSet<T>, List<T>, Dictionary<T, T>, )";
             Label2.Content = "This demonstrates the use of various C# classes (abstract, partial, sealed, static, interface, )";
-            Label3.Content = "Launch PayPal Functionalities Window";
+            Label3.Content = "This demonstrates the use of C# Generics <T>";
+            Label4.Content = "This demonstrates the use of IEnumerables, ICollections, etc.";
+            Label5.Content = "Launch PayPal Functionalities Window";
         }
 
         private void Button1_Click(object sender, RoutedEventArgs e)
@@ -54,6 +56,18 @@ namespace CSharpWorkArea
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            //Window2 wd2 = new Window2();
+            //wd2.Show();
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            //Window2 wd2 = new Window2();
+            //wd2.Show();
+        }
+
+        private void Button5_Click(object sender, RoutedEventArgs e)
         {
             PayPalWindow wd = new PayPalWindow();
             wd.Show();

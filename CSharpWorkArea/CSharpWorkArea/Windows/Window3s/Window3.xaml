@@ -1,13 +1,12 @@
-﻿<Window x:Class="CSharpWorkArea.Windows.Window1s.Window1Dictionary"
+﻿<Window x:Class="CSharpWorkArea.Windows.Window3s.Window3"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:CSharpWorkArea.Windows.Window1s"
+        xmlns:local="clr-namespace:CSharpWorkArea.Windows.Window3s"
         mc:Ignorable="d"
-        Title="Window1Dictionary" SizeToContent="WidthAndHeight">
-    <ScrollViewer>
-        <Grid Name="gridDictionary">
-        </Grid>
-    </ScrollViewer>
+        Title="Window3" SizeToContent="WidthAndHeight">
+    <Grid>
+        
+    </Grid>
 </Window>

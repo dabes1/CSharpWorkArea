@@ -33,6 +33,8 @@ namespace CSharpWorkArea.Windows.Window1s
 
         public void LoadHashTable()
         {
+            // HashTable examples from the following link: https://msdn.microsoft.com/en-us/library/system.collections.hashtable(v=vs.110).aspx
+
             lblAddContent.Content = "This window demonstrates the use of a HashTable object \"_hashTable\"" + '\n' + '\n';
 
             // Add some elements to the hash table. There are no duplicate keys, but some of the values are duplicates.

@@ -30,6 +30,8 @@ namespace CSharpWorkArea.Windows.Window1s
 
         public void LoadHashSet()
         {
+            // HashSet examples from the following link: https://msdn.microsoft.com/en-us/library/bb359438(v=vs.110).aspx
+
             #region HashSet Class
             HashSetClass HashSetClass = new HashSetClass();
 
