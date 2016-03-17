@@ -40,9 +40,9 @@ namespace CSharpWorkArea.Windows.Window1s
             lblAddContent.Content += "Demo uses various objects as the Type \"T\" in use with the List<T>.\n";
             lblAddContent.Content += "\n";
 
-            lblAddContent.Content += "Part 1.\n";
+            lblAddContent.Content += "Part 1 ****************************************\n";
             lblAddContent.Content += "Use of a standard type \"string\" for List<string> object.\n";
-            lblAddContent.Content += "This part demonstrated undert the context of an organization's hierarchy and managment.\n";
+            lblAddContent.Content += "This part demonstrated under the context of an organization's hierarchy and managment.\n";
 
             _listStrings.Add("Mike Brown");
             _listStrings.Add("Troy Blackburn");
@@ -73,6 +73,39 @@ namespace CSharpWorkArea.Windows.Window1s
             lblAddContent.Content += "\n";
 
 
+            lblAddContent.Content += "Using \"Insert\" to insert an entry into a specified index.\n";
+            lblAddContent.Content += "_listStrings.Insert(3, \"Paul Brown\");\n";
+            _listStrings.Insert(3, "Paul Brown");
+            lblAddContent.Content += "Re-display of the upper management and coaching hierarchy.\n";
+            foreach (string item in _listStrings)
+                lblAddContent.Content += string.Format("{0}\n", item);
+            lblAddContent.Content += "\n";
+
+            lblAddContent.Content += "Accessing the list using the Item property.\n";
+            lblAddContent.Content += string.Format("_listStrings[4]:{0}\n", _listStrings[4]);
+            lblAddContent.Content += "\n";
+
+            lblAddContent.Content += "Using \"Remove\" property to remove a specific entry.\n";
+            lblAddContent.Content += "_listStrings.Remove(\"Paul Brown\");\n";
+            _listStrings.Remove("Paul Brown");
+            lblAddContent.Content += "Re-display of the upper management and coaching hierarchy.\n";
+            foreach (string item in _listStrings)
+                lblAddContent.Content += string.Format("{0}\n", item);
+            lblAddContent.Content += "\n";
+
+            lblAddContent.Content += "Using \"TrimExcess()\" property to ...\n";
+            lblAddContent.Content += "_listStrings.TrimExcess();\n";
+            _listStrings.TrimExcess();
+            lblAddContent.Content += string.Format("Capacity: {0}\n", _listStrings.Capacity);
+            lblAddContent.Content += string.Format("Count: {0}\n", _listStrings.Count);
+            lblAddContent.Content += "\n";
+
+            lblAddContent.Content += "Using \"Clear()\" property to empty out the list\n";
+            lblAddContent.Content += "_listStrings.Clear();\n";
+            _listStrings.Clear();
+            lblAddContent.Content += string.Format("Capacity: {0}\n", _listStrings.Capacity);
+            lblAddContent.Content += string.Format("Count: {0}\n", _listStrings.Count);
+            lblAddContent.Content += "\n";
 
 
 
@@ -81,8 +114,9 @@ namespace CSharpWorkArea.Windows.Window1s
 
 
 
-
-            lblAddContent.Content += "Type: ListObject class which has properties PartName(string), PartId(int).\n";
+            lblAddContent.Content += "Part 2 ****************************************\n";
+            lblAddContent.Content += "Use of ListObject class which has properties PartName(string), PartId(int).\n";
+            lblAddContent.Content += "This part demonstrated undert the predicted starting offense for the 2016 season.\n";
 
             _listObjects.Add(new ListObjects() { PartName = "QB-A.Dalton",  PartId=14 });
             _listObjects.Add(new ListObjects() { PartName = "RB-G.Bernard", PartId = 25 });
