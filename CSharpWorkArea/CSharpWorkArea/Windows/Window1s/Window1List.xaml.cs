@@ -93,7 +93,7 @@ namespace CSharpWorkArea.Windows.Window1s
                 lblAddContent.Content += string.Format("{0}\n", item);
             lblAddContent.Content += "\n";
 
-            lblAddContent.Content += "Using \"TrimExcess()\" property to ...\n";
+            lblAddContent.Content += "Using \"TrimExcess()\" property to set the capacity to the actual number of elements in the List<T>, if that number is less than a threshold value.\n";
             lblAddContent.Content += "_listStrings.TrimExcess();\n";
             _listStrings.TrimExcess();
             lblAddContent.Content += string.Format("Capacity: {0}\n", _listStrings.Capacity);
@@ -105,7 +105,7 @@ namespace CSharpWorkArea.Windows.Window1s
             _listStrings.Clear();
             lblAddContent.Content += string.Format("Capacity: {0}\n", _listStrings.Capacity);
             lblAddContent.Content += string.Format("Count: {0}\n", _listStrings.Count);
-            lblAddContent.Content += "\n";
+            lblAddContent.Content += "\n\n";
 
 
 
